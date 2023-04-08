@@ -1,0 +1,12 @@
+ansible_user: Alex
+ansible_password: suporte
+ansible_port: 5985
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+ansible_winrm_transport: ntlm
+ansible_become: yes
+ansible_become_method: runas
+ansible_become_user: Alex
+ansible_become_pass: suporte
+
+#Como esse é um explo para teste, estou passando usuário e senha em texto plano, o ideal que você melhore a segura das informações tornando elas sigilosas.

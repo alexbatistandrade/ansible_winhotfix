@@ -1,0 +1,20 @@
+---
+- name: Get hotfixes
+  win_updates:
+    category_names:
+      - SecurityUpdates
+      - CriticalUpdates
+      - DefinitionUpdates
+      - UpdateRollups
+      - Updates
+      - ServicePacks
+      - UpdateRollups
+      - FeaturePacks
+  register: hotfix
+
+- name: Mostrar hotfixes instalados
+  debug:
+    var: hotfix.updates
+
+- win_reboot:
+  when: hotfix.reboot_required

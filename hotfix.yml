@@ -1,0 +1,7 @@
+- name: Hotfix - Starting Deploy
+  become: true
+  hosts: winteste
+  gather_facts: true
+  
+  roles:
+  - hotfixwin
