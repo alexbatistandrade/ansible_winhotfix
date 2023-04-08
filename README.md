@@ -1,4 +1,4 @@
-Essa playbook utiliza o módulo #win_updates para obter hotfixes do #Windows nas c#ategorias especificadas e #atualizações que devem ser instaladas.
+Essa playbook utiliza o módulo #win_updates para obter hotfixes do #Windows nas #categorias especificadas e #atualizações que devem ser instaladas.
 
 A primeira tarefa é executar o #módulo win_updates, que busca as atualizações disponíveis e instala as categorias especificadas na lista category_names.
   - SecurityUpdates
